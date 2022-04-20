@@ -16,10 +16,22 @@ public class LinkedListB {
 		System.out.println(uc1.list);
 	}
 	
+//	Method for UC2 to Create a LinkedList by adding 30 and 56 to 70
+	public static void UC2() {
+		LinkedListB uc2 = new LinkedListB();
+		uc2.list.add(70);
+		uc2.list.addFirst(30);
+		uc2.list.addFirst(56);
+		
+		System.out.println(uc2.list);
+	}
+	
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
 		
+//		UC2 Method
+		UC2();
 	}
 
 }
