@@ -60,6 +60,17 @@ public class LinkedListB {
 		System.out.println("UC5="+uc5.list);
 	}
 	
+//	Method for UC6 Ability to delete the last element in the LinkedList
+	public static void UC6() {
+		LinkedListB uc6 = new LinkedListB();
+		uc6.list.add(56);
+		uc6.list.add(30);
+		uc6.list.add(70);
+		System.out.println("UC6="+uc6.list);
+		uc6.list.removeLast();
+		System.out.println("UC6="+uc6.list);
+	}
+	
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
@@ -79,6 +90,10 @@ public class LinkedListB {
 //		UC5 Method
 		System.out.println();
 		UC5();
+		
+//		UC6 Method
+		System.out.println();
+		UC6();
 	}
 
 }
