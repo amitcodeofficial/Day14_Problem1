@@ -4,17 +4,20 @@ import java.util.LinkedList;
 
 public class LinkedListB {
 	
-	public static LinkedList<Integer> list = new LinkedList<Integer>();
+	public LinkedList<Integer> list = new LinkedList<Integer>();
 	
+//	Method for UC1 to create a simple LinkedList of 56,30,70
 	public static void UC1() {
-		list.add(56);
-		list.add(30);
-		list.add(70);
+		LinkedListB uc1 = new LinkedListB();
+		uc1.list.add(56);
+		uc1.list.add(30);
+		uc1.list.add(70);
 		
-		System.out.println(list);
+		System.out.println(uc1.list);
 	}
-
+	
 	public static void main(String[] args) {
+//		UC1 Method
 		UC1();
 	}
 
