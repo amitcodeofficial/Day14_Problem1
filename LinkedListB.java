@@ -10,20 +10,33 @@ public class LinkedListB {
 	public static void UC1() {
 		LinkedListB uc1 = new LinkedListB();
 		uc1.list.add(56);
+		System.out.println("UC1="+uc1.list);
 		uc1.list.add(30);
+		System.out.println("UC1="+uc1.list);
 		uc1.list.add(70);
-		
-		System.out.println(uc1.list);
+		System.out.println("UC1="+uc1.list);
 	}
 	
 //	Method for UC2 to Create a LinkedList by adding 30 and 56 to 70
 	public static void UC2() {
 		LinkedListB uc2 = new LinkedListB();
 		uc2.list.add(70);
+		System.out.println("UC="+uc2.list);
 		uc2.list.addFirst(30);
+		System.out.println("UC="+uc2.list);
 		uc2.list.addFirst(56);
-		
-		System.out.println(uc2.list);
+		System.out.println("UC="+uc2.list);
+	}
+	
+//	Method for UC3 to Create a LinkedList by appending 30 and 70 to 56
+	public static void UC3() {
+		LinkedListB uc3 = new LinkedListB();
+		uc3.list.add(56);
+		System.out.println("UC3="+uc3.list);
+		uc3.list.addLast(30);
+		System.out.println("UC3="+uc3.list);
+		uc3.list.addLast(70);
+		System.out.println("UC3="+uc3.list);
 	}
 	
 	public static void main(String[] args) {
@@ -31,7 +44,12 @@ public class LinkedListB {
 		UC1();
 		
 //		UC2 Method
+		System.out.println();
 		UC2();
+		
+//		UC3 Method
+		System.out.println();
+		UC3();
 	}
 
 }
