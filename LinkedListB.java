@@ -21,11 +21,11 @@ public class LinkedListB {
 	public static void UC2() {
 		LinkedListB uc2 = new LinkedListB();
 		uc2.list.add(70);
-		System.out.println("UC="+uc2.list);
+		System.out.println("UC2="+uc2.list);
 		uc2.list.addFirst(30);
-		System.out.println("UC="+uc2.list);
+		System.out.println("UC2="+uc2.list);
 		uc2.list.addFirst(56);
-		System.out.println("UC="+uc2.list);
+		System.out.println("UC2="+uc2.list);
 	}
 	
 //	Method for UC3 to Create a LinkedList by appending 30 and 70 to 56
@@ -49,6 +49,17 @@ public class LinkedListB {
 		System.out.println("UC4="+uc4.list);
 	}
 	
+//	Method for UC5 Ability to delete the first element in the LinkedList
+	public static void UC5() {
+		LinkedListB uc5 = new LinkedListB();
+		uc5.list.add(56);
+		uc5.list.add(30);
+		uc5.list.add(70);
+		System.out.println("UC5="+uc5.list);
+		uc5.list.removeFirst();
+		System.out.println("UC5="+uc5.list);
+	}
+	
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
@@ -64,6 +75,10 @@ public class LinkedListB {
 //		UC4 Method
 		System.out.println();
 		UC4();
+		
+//		UC5 Method
+		System.out.println();
+		UC5();
 	}
 
 }
