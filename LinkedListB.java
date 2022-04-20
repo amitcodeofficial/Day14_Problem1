@@ -19,6 +19,7 @@ public class LinkedListB {
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
+		
 	}
 
 }
