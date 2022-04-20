@@ -39,6 +39,16 @@ public class LinkedListB {
 		System.out.println("UC3="+uc3.list);
 	}
 	
+//	Method for UC4 Ability to insert 30 between 56 and 70
+	public static void UC4() {
+		LinkedListB uc4 = new LinkedListB();
+		uc4.list.add(56);
+		uc4.list.add(70);
+		System.out.println("UC4="+uc4.list);
+		uc4.list.add(1, 30);
+		System.out.println("UC4="+uc4.list);
+	}
+	
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
@@ -50,6 +60,10 @@ public class LinkedListB {
 //		UC3 Method
 		System.out.println();
 		UC3();
+		
+//		UC4 Method
+		System.out.println();
+		UC4();
 	}
 
 }
