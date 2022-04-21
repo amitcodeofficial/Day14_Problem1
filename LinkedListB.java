@@ -1,5 +1,6 @@
 package com.bridgelab.Day14;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class LinkedListB {
@@ -71,6 +72,19 @@ public class LinkedListB {
 		System.out.println("UC6="+uc6.list);
 	}
 	
+//	UC10...Ability to create Ordered Linked List in ascending order of data entered in following sequence 56, 30, 40 and 70 and sort it
+	public static void UC10() {
+		LinkedListB uc10 = new LinkedListB();
+		uc10.list.add(56);
+		uc10.list.add(30);
+		uc10.list.add(40);
+		uc10.list.add(70);
+		System.out.println("UC10="+uc10.list);
+		System.out.println("After Sorting=");
+		uc10.list.sort(Comparator.naturalOrder());
+		System.out.println(uc10.list);
+	}
+	
 	public static void main(String[] args) {
 //		UC1 Method
 		UC1();
@@ -94,6 +108,10 @@ public class LinkedListB {
 //		UC6 Method
 		System.out.println();
 		UC6();
+		
+//		UC10 Method
+		System.out.println();
+		UC10();
 	}
 
 }
