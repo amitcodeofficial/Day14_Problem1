@@ -7,7 +7,7 @@ import junit.framework.Assert;
 
 public class UC7Test {
 
-//	UC7 Method
+//	UC7 and UC8 Method
 	public static Boolean uc7() {
 		Boolean answer = null;
 		LinkedListB uc7 = new LinkedListB();
@@ -15,6 +15,11 @@ public class UC7Test {
 		uc7.list.add(30);
 		uc7.list.add(70);
 		System.out.println(uc7.list);
+		
+//		UC8
+		uc7.list.add(2, 40);
+		System.out.println(uc7.list);
+		
 		for(int i=0;i<uc7.list.size();i++) {
 			if(uc7.list.get(i).equals(30)) {
 				answer=true;
